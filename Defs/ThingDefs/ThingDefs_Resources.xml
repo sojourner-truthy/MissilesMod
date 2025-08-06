@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="ResourceBase">
+        <defName>TomahawkMissile_HE</defName>
+        <label>tomahawk missile (HE)</label>
+        <description>A tactical cruise missile equipped with a high-explosive warhead.</description>
+        <graphicData>
+            <li>
+                <texPath>Things/Weapons/TomahawkMissile_Base</texPath>
+                <graphicClass>Graphic_ShaderOverlayColored</graphicClass>
+                <color>(1.0, 0.4, 0.4, 1.0)</color>
+            </li>
+            <li>
+                <texPath>Things/Weapons/TomahawkMissile_Simple</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <color>(1.0, 0.4, 0.4, 1.0)</color>
+            </li>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>5</stackLimit>
+        <tickerType>Count</tickerType>
+        <statBases>
+            <Mass>35</Mass>
+            <MarketValue>1100</MarketValue>
+        </statBases>
+        <thingCategories>
+            <li>Shells</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <damageAmountBase>150</damageAmountBase>
+                <explosiveRadius>3.5</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <explosiveExpandPerStackcount>0.5</explosiveExpandPerStackcount>
+                <startWickOnDamageTaken>
+                    <li>Bomb</li>
+                </startWickOnDamageTaken>
+                <startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+                <preExplosionSpawnThingDef>Filth_Soot</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1.0</preExplosionSpawnChance>
+                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                <explodeOnKilled>True</explodeOnKilled>
+                <wickTicks>60~90</wickTicks>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>TomahawkMissile_EMP</defName>
+        <label>tomahawk missile (EMP)</label>
+        <description>A cruise missile designed to disable enemy electronics with an EMP burst.</description>
+        <graphicData>
+            <li>
+                <texPath>Things/Weapons/TomahawkMissile_Base</texPath>
+                <graphicClass>Graphic_ShaderOverlayColored</graphicClass>
+                <color>(0.3, 0.6, 1.0, 1.0)</color>
+            </li>
+            <li>
+                <texPath>Things/Weapons/TomahawkMissile_Simple</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <color>(0.3, 0.6, 1.0, 1.0)</color>
+            </li>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>5</stackLimit>
+        <tickerType>Count</tickerType>
+        <statBases>
+            <Mass>35</Mass>
+            <MarketValue>1150</MarketValue>
+        </statBases>
+        <thingCategories>
+            <li>Shells</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <damageAmountBase>0</damageAmountBase>
+                <explosiveRadius>4.0</explosiveRadius>
+                <explosiveDamageType>EMP</explosiveDamageType>
+                <explosiveExpandPerStackcount>0.5</explosiveExpandPerStackcount>
+                <startWickOnDamageTaken>
+                    <li>EMP</li>
+                </startWickOnDamageTaken>
+                <startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+                <preExplosionSpawnThingDef>Filth_EmpSparks</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1.0</preExplosionSpawnChance>
+                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                <explodeOnKilled>True</explodeOnKilled>
+                <wickTicks>60~90</wickTicks>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>TomahawkMissile_Incendiary</defName>
+        <label>tomahawk missile (incendiary)</label>
+        <description>A cruise missile that ignites a wide area with burning fuel compounds.</description>
+        <graphicData>
+            <li>
+                <texPath>Things/Weapons/TomahawkMissile_Base</texPath>
+                <graphicClass>Graphic_ShaderOverlayColored</graphicClass>
+                <color>(1.0, 0.6, 0.1, 1.0)</color>
+            </li>
+            <li>
+                <texPath>Things/Weapons/TomahawkMissile_Simple</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <color>(1.0, 0.6, 0.1, 1.0)</color>
+            </li>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>5</stackLimit>
+        <tickerType>Count</tickerType>
+        <statBases>
+            <Mass>35</Mass>
+            <MarketValue>1125</MarketValue>
+        </statBases>
+        <thingCategories>
+            <li>Shells</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <damageAmountBase>100</damageAmountBase>
+                <explosiveRadius>3.0</explosiveRadius>
+                <explosiveDamageType>Flame</explosiveDamageType>
+                <explosiveExpandPerStackcount>0.5</explosiveExpandPerStackcount>
+                <startWickOnDamageTaken>
+                    <li>Flame</li>
+                </startWickOnDamageTaken>
+                <startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+                <preExplosionSpawnThingDef>Filth_Soot</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1.0</preExplosionSpawnChance>
+                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                <explodeOnKilled>True</explodeOnKilled>
+                <wickTicks>60~90</wickTicks>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

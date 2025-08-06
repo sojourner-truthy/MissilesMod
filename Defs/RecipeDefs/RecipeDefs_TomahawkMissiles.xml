@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- WARHEAD RECIPES -->
+    <RecipeDef>
+        <defName>Make_HEWarhead</defName>
+        <label>craft HE warhead</label>
+        <workAmount>500</workAmount>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li><thingDef>Chemfuel</thingDef><count>25</count></li>
+            <li><thingDef>Steel</thingDef><count>15</count></li>
+        </ingredients>
+        <products>
+            <li><thingDef>HEWarhead</thingDef><count>1</count></li>
+        </products>
+        <recipeUsers>
+            <li>MissileAssemblyBench</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>Make_EMPWarhead</defName>
+        <label>craft EMP warhead</label>
+        <workAmount>600</workAmount>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li><thingDef>ComponentIndustrial</thingDef><count>2</count></li>
+            <li><thingDef>Plasteel</thingDef><count>10</count></li>
+            <li><thingDef>Uranium</thingDef><count>5</count></li>
+        </ingredients>
+        <products>
+            <li><thingDef>EMPWarhead</thingDef><count>1</count></li>
+        </products>
+        <recipeUsers>
+            <li>MissileAssemblyBench</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>Make_IncendiaryWarhead</defName>
+        <label>craft incendiary warhead</label>
+        <workAmount>550</workAmount>
+        <skillRequirements>
+            <Crafting>7</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li><thingDef>Chemfuel</thingDef><count>30</count></li>
+            <li><thingDef>Steel</thingDef><count>10</count></li>
+            <li><thingDef>Cloth</thingDef><count>15</count></li>
+        </ingredients>
+        <products>
+            <li><thingDef>IncendiaryWarhead</thingDef><count>1</count></li>
+        </products>
+        <recipeUsers>
+            <li>MissileAssemblyBench</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <!-- TOMAHAWK ASSEMBLY RECIPES -->
+    <RecipeDef>
+        <defName>Assemble_TomahawkMissile_HE</defName>
+        <label>assemble tomahawk missile (HE)</label>
+        <workAmount>1000</workAmount>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li><thingDef>RA_RocketEngine</thingDef><count>1</count></li>
+            <li><thingDef>RA_RocketFuselage</thingDef><count>1</count></li>
+            <li><thingDef>GuidanceCore</thingDef><count>1</count></li>
+            <li><thingDef>MissileFins</thingDef><count>1</count></li>
+            <li><thingDef>HEWarhead</thingDef><count>1</count></li>
+        </ingredients>
+        <products>
+            <li><thingDef>TomahawkMissile_HE</thingDef><count>1</count></li>
+        </products>
+        <recipeUsers>
+            <li>MissileAssemblyBench</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>Assemble_TomahawkMissile_EMP</defName>
+        <label>assemble tomahawk missile (EMP)</label>
+        <workAmount>1000</workAmount>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li><thingDef>RA_RocketEngine</thingDef><count>1</count></li>
+            <li><thingDef>RA_RocketFuselage</thingDef><count>1</count></li>
+            <li><thingDef>GuidanceCore</thingDef><count>1</count></li>
+            <li><thingDef>MissileFins</thingDef><count>1</count></li>
+            <li><thingDef>EMPWarhead</thingDef><count>1</count></li>
+        </ingredients>
+        <products>
+            <li><thingDef>TomahawkMissile_EMP</thingDef><count>1</count></li>
+        </products>
+        <recipeUsers>
+            <li>MissileAssemblyBench</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>Assemble_TomahawkMissile_Incendiary</defName>
+        <label>assemble tomahawk missile (incendiary)</label>
+        <workAmount>1000</workAmount>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li><thingDef>RA_RocketEngine</thingDef><count>1</count></li>
+            <li><thingDef>RA_RocketFuselage</thingDef><count>1</count></li>
+            <li><thingDef>GuidanceCore</thingDef><count>1</count></li>
+            <li><thingDef>MissileFins</thingDef><count>1</count></li>
+            <li><thingDef>IncendiaryWarhead</thingDef><count>1</count></li>
+        </ingredients>
+        <products>
+            <li><thingDef>TomahawkMissile_Incendiary</thingDef><count>1</count></li>
+        </products>
+        <recipeUsers>
+            <li>MissileAssemblyBench</li>
+        </recipeUsers>
+    </RecipeDef>
+
+</Defs>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BasedWarhead">
+        <defName>HEWarhead</defName>
+        <label>HE warhead</label>
+        <description>A high-explosive warhead for Tomahawk missiles.</description>
+        <graphicData>
+            <texPath>Things/Resources/warhead</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>12000</MarketValue>
+            <Mass>45</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <damageAmountBase>150</damageAmountBase>
+                <explosiveRadius>3.5</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <explosiveExpandPerStackcount>0.5</explosiveExpandPerStackcount>
+                <startWickOnDamageTaken>
+                    <li>Bomb</li>
+                </startWickOnDamageTaken>
+                <startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+                <preExplosionSpawnThingDef>Filth_Soot</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1.0</preExplosionSpawnChance>
+                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                <explodeOnKilled>True</explodeOnKilled>
+                <wickTicks>60~90</wickTicks>
+            </li>
+        </comps>
+        <recipeMaker>
+            <productCount>1</productCount>
+            <workAmount>30000</workAmount>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>ConstructMetal</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers>
+                <li>TableRimatomicsMachining</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedRimatomics</unfinishedThingDef>
+            <costList>
+                <Steel>60</Steel>
+                <ComponentIndustrial>3</ComponentIndustrial>
+                <Plutonium>2</Plutonium>
+            </costList>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="BasedWarhead">
+        <defName>EMPWarhead</defName>
+        <label>EMP warhead</label>
+        <description>An EMP warhead that disables electronics in a radius.</description>
+        <graphicData>
+            <texPath>Things/Resources/warhead</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>12500</MarketValue>
+            <Mass>45</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <damageAmountBase>0</damageAmountBase>
+                <explosiveRadius>4.0</explosiveRadius>
+                <explosiveDamageType>EMP</explosiveDamageType>
+                <explosiveExpandPerStackcount>0.5</explosiveExpandPerStackcount>
+                <startWickOnDamageTaken>
+                    <li>EMP</li>
+                </startWickOnDamageTaken>
+                <startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+                <preExplosionSpawnThingDef>Filth_EmpSparks</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1.0</preExplosionSpawnChance>
+                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                <explodeOnKilled>True</explodeOnKilled>
+                <wickTicks>60~90</wickTicks>
+            </li>
+        </comps>
+        <recipeMaker>
+            <productCount>1</productCount>
+            <workAmount>30000</workAmount>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>ConstructMetal</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers>
+                <li>TableRimatomicsMachining</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedRimatomics</unfinishedThingDef>
+            <costList>
+                <Steel>60</Steel>
+                <ComponentIndustrial>3</ComponentIndustrial>
+                <Plutonium>2</Plutonium>
+            </costList>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="BasedWarhead">
+        <defName>IncendiaryWarhead</defName>
+        <label>Incendiary warhead</label>
+        <description>A warhead that ignites a wide area on impact.</description>
+        <graphicData>
+            <texPath>Things/Resources/warhead</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>12250</MarketValue>
+            <Mass>45</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <damageAmountBase>100</damageAmountBase>
+                <explosiveRadius>3.0</explosiveRadius>
+                <explosiveDamageType>Flame</explosiveDamageType>
+                <explosiveExpandPerStackcount>0.5</explosiveExpandPerStackcount>
+                <startWickOnDamageTaken>
+                    <li>Flame</li>
+                </startWickOnDamageTaken>
+                <startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+                <preExplosionSpawnThingDef>Filth_Soot</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1.0</preExplosionSpawnChance>
+                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                <explodeOnKilled>True</explodeOnKilled>
+                <wickTicks>60~90</wickTicks>
+            </li>
+        </comps>
+        <recipeMaker>
+            <productCount>1</productCount>
+            <workAmount>30000</workAmount>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>ConstructMetal</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers>
+                <li>TableRimatomicsMachining</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedRimatomics</unfinishedThingDef>
+            <costList>
+                <Steel>60</Steel>
+                <ComponentIndustrial>3</ComponentIndustrial>
+                <Plutonium>2</Plutonium>
+            </costList>
+        </recipeMaker>
+    </ThingDef>
+</Defs>

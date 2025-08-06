@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModMetaData>
+    <name>Tomahawk Missile Expansion</name>
+    <author>YourNameHere</author>
+    <packageId>sojourner-truthy.missilemod</packageId>
+    <url>https://github.com/sojourner-truthy/MissilesMod</url>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <description>
+        Adds modular, Rimatomics-compatible cruise missiles to RimWorld — including high-explosive, EMP, and incendiary Tomahawk variants.
+        Craft your own warheads, guidance systems, and missile assemblies, then fire them from launcher systems.
+        Compatible with space and ground bases in the Odyssey DLC.
+    </description>
+    <modDependencies>
+        <li>
+            <packageId>Dubwise.Rimatomics</packageId>
+            <displayName>Rimatomics</displayName>
+        </li>
+        <li>
+            <packageId>ludeon.rimworld.royalty</packageId>
+            <displayName>Royalty DLC</displayName>
+        </li>
+        <li>
+            <packageId>ludeon.rimworld.odyssey</packageId>
+            <displayName>Odyssey DLC</displayName>
+        </li>
+    </modDependencies>
+</ModMetaData>
