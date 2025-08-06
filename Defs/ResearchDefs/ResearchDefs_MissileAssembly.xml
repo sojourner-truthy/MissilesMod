@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ResearchProjectDef>
+        <defName>Research_MissileAssembly</defName>
+        <label>Missile Assembly</label>
+        <description>Unlocks missile assembly bench and launch pad.</description>
+        <baseCost>1200</baseCost>
+        <prerequisites>
+            <li>My_FirstPrerequisiteResearch</li>
+        </prerequisites>
+        <researchTechLevel>Industrial</researchTechLevel>
+        <tags>
+            <li>Weapons</li>
+        </tags>
+        <uiIconPath>UI/Icons/Research/MissileAssembly</uiIconPath>
+    </ResearchProjectDef>
+
+</Defs>

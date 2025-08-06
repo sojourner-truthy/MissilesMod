@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>RA_RocketEngine</defName>
+        <label>rocket engine</label>
+        <description>A compact, high-thrust rocket engine used in Tomahawk missiles.</description>
+        <graphicData>
+            <texPath>Things/MissileParts/RocketEngine</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>24</Mass>
+            <MarketValue>800</MarketValue>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>RA_RocketFuselage</defName>
+        <label>rocket fuselage</label>
+        <description>The main body section of a Tomahawk missile.</description>
+        <graphicData>
+            <texPath>Things/MissileParts/RocketFuselage</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>18</Mass>
+            <MarketValue>650</MarketValue>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>GuidanceCore</defName>
+        <label>guidance core</label>
+        <description>An electronic guidance unit for missile navigation.</description>
+        <graphicData>
+            <texPath>Things/MissileParts/GuidanceCore</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>2</Mass>
+            <MarketValue>1200</MarketValue>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>MissileFins</defName>
+        <label>missile fins</label>
+        <description>Stabilizing fins for Tomahawk missile flight control.</description>
+        <graphicData>
+            <texPath>Things/MissileParts/MissileFins</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>1</Mass>
+            <MarketValue>300</MarketValue>
+        </statBases>
+    </ThingDef>
+
+</Defs>
