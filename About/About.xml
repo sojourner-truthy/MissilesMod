@@ -14,8 +14,8 @@
     </description>
     <modDependencies>
         <li>
-            <packageId>Dubwise.Rimatomics</packageId>
-            <displayName>Rimatomics</displayName>
+            <packageId>ludeon.rimworld</packageId>
+            <displayName>Core</displayName>
         </li>
         <li>
             <packageId>ludeon.rimworld.royalty</packageId>
@@ -24,6 +24,10 @@
         <li>
             <packageId>ludeon.rimworld.odyssey</packageId>
             <displayName>Odyssey DLC</displayName>
+        </li>
+        <li>
+            <packageId>Dubwise.Rimatomics</packageId>
+            <displayName>Rimatomics</displayName>
         </li>
     </modDependencies>
 </ModMetaData>
